@@ -1,0 +1,15 @@
+app:
+  name: vandal-poi-gateway-app
+  namespace: vandal
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/vandal-gateway
+  org: Summit23Janus2
+  name: vandal-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: vandal/poi-gateway-app
+  tag: latest
